@@ -1,2 +1,2 @@
 # Portfolio
-React portfolio to showcase myself and my skills.
+React portfolio to showcase myself and my skills. 👨🏽‍💻
