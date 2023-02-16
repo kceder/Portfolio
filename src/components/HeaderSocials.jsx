@@ -3,7 +3,7 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function HeaderSocials() {
   return (
-    <div className="bg-transparent sm:hidden md:flex flex-col items-center gap-6 fixed left-9 top-[40%] text-primary">
+    <div className="bg-transparent hidden md:flex flex-col items-center gap-6 fixed left-9 top-[40%] text-primary">
       <a href="https://www.linkedin.com/in/kristian-ceder/" target="_blank">
         <BsLinkedin className="hover:scale-125" />
       </a>

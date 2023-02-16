@@ -12,30 +12,32 @@ module.exports = {
           'color': '#83c5be',
           'padding': '.75rem 1.2rem',
           'border-radius': '2.25rem',
-          'border': '1px solid #ccc',
+          'border': '1px solid transparent',
           'cursor': 'pointer',
           'transition': 'background-color .2s ease-in-out',
           'width': 'max-content', // custom width value
           'display': 'inline-block', // custom display value
           '&:hover': {
-            'background-color': '#d4d4d4',
+            'background-color': '#dbe9e1',
+            'border-color': '#dbe9e1',
           },
           '&:active': {
             'background-color': '#c3c3c3',
           },
         },
         '.button-2': {
-          'background-color': '#83c5be',
+          'background-color': '#60faa3',
           'color': '#006d77',
           'padding': '.75rem 1.2rem',
           'border-radius': '2.25rem',
-          'border': '1px solid #ccc',
+          'border': '1px solid transparent',
           'cursor': 'pointer',
           'transition': 'background-color .2s ease-in-out',
           'width': 'max-content', // custom width value
           'display': 'inline-block', // custom display value
           '&:hover': {
-            'background-color': '#d4d4d4',
+            'background-color': '#dbe9e1',
+            'border-color': '#dbe9e1',
           },
           '&:active': {
             'background-color': '#c3c3c3',
@@ -53,14 +55,32 @@ module.exports = {
         '.bg-light': {
           'background-color': '#edf6f9',
         },
+        '.bg-soft': {
+          'background-color': '#dbe9e1',
+        },
+        '.bg-bright': {
+          'background-color': '#60faa3',
+        },
         '.text-primary': {
           'color': '#006d77',
+        },
+        '.text-bright': {
+          'color': '#60faa3',
         },
         '.text-secondary': {
           'color': '#83c5be',
         },
         '.text-light': {
           'color': '#edf6f9',
+        },
+        '.text-soft': {
+          'color': '#dbe9e1',
+        },
+        '.border-soft': {
+          'border-color': '#dbe9e1',
+        },
+        '.border-bright': {
+          'border-color': '#60faa3',
         },
         '.border-primary': {
           'border-color': '#006d77',
