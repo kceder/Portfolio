@@ -33,38 +33,38 @@ export default function Contact() {
       <h2 className="text-5xl">Contact Me</h2>
       <div className="options grid grid-cols-1 gap-8 md:grid-cols-4">
         <div className="col-span-2 text-primary">
-          <article className="option bg-secondary m-10 p-4 rounded-2xl">
+          <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
             <BiMailSend className="mx-auto" />
             <small>Email</small>
             <h5 className="break-all">ceder.kristian@gmail.com</h5>
             <a
               href="mailto:ceder.kristian@gmail.com"
               target={"_blank"}
-              className="button-2 text-sm text-black rounded-xl px-2 py-1 bg-transparent"
+              className="button-2 text-sm text-black hover:border-primary transition rounded-xl px-2 py-1 bg-transparent"
             >
               Send
             </a>
           </article>
-          <article className="option bg-secondary m-10 p-4 rounded-2xl">
+          <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
             <BiMessageRoundedDots className="mx-auto" />
             <small>WhatsApp</small>
             <h5 className="break-all">+358401760886</h5>
             <a
               href="https://wa.me/358401760886"
               target={"_blank"}
-              className="button-2 text-sm text-black rounded-xl px-2 py-1 bg-transparent"
+              className="button-2 text-sm text-black hover:border-primary transition rounded-xl px-2 py-1 bg-transparent"
             >
               Send
             </a>
           </article>
-          <article className="option bg-secondary m-10 p-4 rounded-2xl">
+          <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
             <FaFacebookMessenger className="mx-auto" />
             <small>Messenger</small>
             <h5>Kristian Ceder</h5>
             <a
               href="https://m.me/kristian.ceder.3"
               target={"_blank"}
-              className="button-2 text-sm text-black rounded-xl px-2 py-1 bg-transparent"
+              className="button-2 text-sm text-black hover:border-primary transition rounded-xl px-2 py-1 bg-transparent"
             >
               Send
             </a>
