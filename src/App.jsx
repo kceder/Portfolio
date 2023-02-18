@@ -10,7 +10,7 @@ import Counter from './components/Contact';
 
 function App() {
   return (
-    <div className=''>
+    <div>
       <Header />
       <Nav />
       <main>
