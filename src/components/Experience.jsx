@@ -1,7 +1,5 @@
 import React from "react";
 import "../App.css";
-import { BsPatchCheckFill } from "react-icons/bs";
-// import logos from react-icons for react, javascript, tailwind, bootstrap, css, html, node.js, php, c, mysql, postgres, sql
 import {
   FaReact,
   FaJs,
@@ -18,32 +16,32 @@ import { AiOutlineConsoleSql } from "react-icons/ai";
 
 const frontendData = [
   {
-    icon: <FaReact className={"mt-1"} />,
+    icon: <FaReact className={"mt-1 text-blue-500"} />,
     title: "React",
     level: "Intermediate",
   },
   {
-    icon: <FaJs className={"mt-1"} />,
+    icon: <FaJs className={"mt-1 text-yellow-400"} />,
     title: "Javascript",
     level: "Intermediate",
   },
   {
-    icon: <SiTailwindcss className={"mt-1"} />,
+    icon: <SiTailwindcss className={"mt-1 text-cyan-500"} />,
     title: "Tailwind",
     level: "Intermediate",
   },
   {
-    icon: <FaBootstrap className={"mt-1"} />,
+    icon: <FaBootstrap className={"mt-1 text-purple-500"} />,
     title: "Bootstrap",
     level: "Intermediate",
   },
   {
-    icon: <FaCss3Alt className={"mt-1"} />,
+    icon: <FaCss3Alt className={"mt-1 text-blue-400"} />,
     title: "CSS",
     level: "Intermediate",
   },
   {
-    icon: <FaHtml5 className={"mt-1"} />,
+    icon: <FaHtml5 className={"mt-1 text-orange-400"} />,
     title: "HTML",
     level: "Intermediate",
   },
@@ -51,32 +49,32 @@ const frontendData = [
 
 const backendData = [
   {
-    icon: <FaNodeJs className={"mt-1"} />,
+    icon: <FaNodeJs className={"mt-1 text-green-500"} />,
     title: "Node.js",
     level: "Intermediate",
   },
   {
-    icon: <FaPhp className={"mt-1"} />,
+    icon: <FaPhp className={"mt-1 text-purple-600"} />,
     title: "PHP",
     level: "Intermediate",
   },
   {
-    icon: <FaCode className={"mt-1"} />,
+    icon: <FaCode className={"mt-1 text-gray-500"} />,
     title: "C",
     level: "Intermediate",
   },
   {
-    icon: <FaDatabase className={"mt-1"} />,
+    icon: <FaDatabase className={"mt-1 text-blue-600"} />,
     title: "MySQL",
     level: "Intermediate",
   },
   {
-    icon: <SiPostgresql className={"mt-1"} />,
+    icon: <SiPostgresql className={"mt-1 text-blue-500"} />,
     title: "PostgreSQL",
     level: "Intermediate",
   },
   {
-    icon: <AiOutlineConsoleSql className={"mt-1"} />,
+    icon: <AiOutlineConsoleSql className={"mt-1 text-yellow-600"} />,
     title: "SQL",
     level: "Intermediate",
   },
@@ -85,36 +83,33 @@ const backendData = [
 export default function Experience() {
   return (
     <section id="experience" className="text-center my-52">
-      <h5 className="text-gray-300 my-5">What skills do I have</h5>
+      <h5 className="my-5 text-gray-300">What skills do I have</h5>
       <h2 className="text-5xl">My Experience</h2>
-      <div className="h-1 w-20 bg-primary my-5 mx-auto"></div>
-
-      <div className="grid md:grid-cols-2 gap-8 text-primary mt-20 mx-4 md:mx-24">
-        <div className="frontend grid-col-1 bg-bright rounded-2xl py-8 px-10 md:px20 border border-solid border-transparent hover:bg-light transition duration-500">
-          <h3 className="mb-5 text-primary text-center">
+      <div className="w-20 h-1 mx-auto my-5 bg-primary"></div>
+      <div className="grid gap-8 mx-4 mt-20 md:grid-cols-2 text-primary md:mx-24">
+        <div className="px-10 py-8 transition duration-500 border border-transparent border-solid frontend grid-col-1 bg-bright rounded-2xl md:px20 hover:bg-light">
+          <h3 className="mb-5 text-center text-primary">
             Frontend Development
           </h3>
-          <div className="content grid grid-cols-2 gap-y-8">
+          <div className="grid grid-cols-2 content gap-y-4">
             {frontendData.map((data, index) => {
               return (
-                <article className="details flex gap-4" key={index}>
+                <article className="flex gap-4 text-black md:text-lg details" key={index}>
                   {data.icon}
                   <h4>{data.title}</h4>
-                  <small>{data.level}</small>
                 </article>
               );
             })}
           </div>
         </div>
-        <div className="backend grid-col-1 bg-bright rounded-2xl py-8 px-10 md:px20 border border-solid border-transparent hover:bg-light transition duration-500">
+        <div className="px-10 py-8 transition duration-500 border border-transparent border-solid backend grid-col-1 bg-bright rounded-2xl md:px20 hover:bg-light">
           <h3 className="mb-5 text-center">Backend Development</h3>
-          <div className="content grid grid-cols-2 gap-y-8">
+          <div className="grid grid-cols-2 content gap-y-4">
             {backendData.map((data, index) => {
               return (
-                <article className="details flex gap-4" key={index}>
+                <article className="flex gap-4 text-black md:text-lg details" key={index}>
                   {data.icon}
                   <h4>{data.title}</h4>
-                  <small>{data.level}</small>
                 </article>
               );
             })}

@@ -93,5 +93,6 @@ module.exports = {
         },
       });
     },
+    require('tailwindcss-debug-screens'),
   ],
 }

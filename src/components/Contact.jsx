@@ -28,16 +28,16 @@ export default function Contact() {
   };
 
   return (
-    <section id="contact" className="text-center my-52  mt-20 mx-4 md:mx-24">
-      <h5 className="text-bright my-5">Get in touch</h5>
+    <section id="contact" className="mx-4 mt-20 text-center my-52 md:mx-24">
+      <h5 className="my-5 text-bright">Get in touch</h5>
       <h2 className="text-5xl">Contact Me</h2>
-      <div className="options grid grid-cols-1 gap-8 md:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 options md:grid-cols-4">
         <div className="col-span-2 text-primary">
           <a
             href="mailto:ceder.kristian@gmail.com"
             target={"_blank"}
           >
-            <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
+            <article className="p-4 m-10 transition duration-500 option hover:scale-105 hover:bg-soft bg-secondary rounded-2xl">
               <BiMailSend className="mx-auto" />
               <small>Email</small>
               <h5 className="break-all">ceder.kristian@gmail.com</h5>
@@ -48,7 +48,7 @@ export default function Contact() {
             href="https://wa.me/358401760886"
             target={"_blank"}
           >
-            <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
+            <article className="p-4 m-10 transition duration-500 option hover:scale-105 hover:bg-soft bg-secondary rounded-2xl">
               <BiMessageRoundedDots className="mx-auto" />
               <small>WhatsApp</small>
               <h5 className="break-all">+358401760886</h5>
@@ -59,7 +59,7 @@ export default function Contact() {
             href="https://m.me/kristian.ceder.3"
             target={"_blank"}
           >
-            <article className="option hover:scale-105 transition duration-500 hover:bg-soft bg-secondary m-10 p-4 rounded-2xl">
+            <article className="p-4 m-10 transition duration-500 option hover:scale-105 hover:bg-soft bg-secondary rounded-2xl">
               <FaFacebookMessenger className="mx-auto" />
               <small>Messenger</small>
               <h5>Kristian Ceder</h5>
@@ -70,21 +70,21 @@ export default function Contact() {
         <form
           ref={form}
           onSubmit={sendEmail}
-          className="col-span-2 flex flex-col rounded-xl gap-6 mt-10 h-2/3"
+          className="flex flex-col col-span-1 gap-6 mt-10 md:col-span-2 rounded-xl h-2/3"
         >
           <input
             type="text"
             name="name"
             placeholder="Your full name"
             required
-            className="ml-10 p-6 p-4 border border-solid border-primary rounded-xl resize-none"
+            className="p-4 p-6 ml-10 border border-solid resize-none border-primary rounded-xl"
           />
           <input
             type="email"
             name="email"
             placeholder="Your email"
             required
-            className="ml-10 p-6 p-4 border border-solid border-primary rounded-xl resize-none"
+            className="p-4 p-6 ml-10 border border-solid resize-none border-primary rounded-xl"
           />
           <textarea
             name="message"
@@ -93,9 +93,9 @@ export default function Contact() {
             rows="10"
             placeholder="Your message"
             required
-            className="ml-10 p-6 p-4 border border-solid border-primary rounded-xl resize-none"
+            className="p-4 p-6 ml-10 border border-solid resize-none border-primary rounded-xl"
           ></textarea>
-          <button type="submit" className="button-1 ml-10 rounded-xl">
+          <button type="submit" className="ml-10 button-1 rounded-xl">
             Send Message
           </button>
         </form>

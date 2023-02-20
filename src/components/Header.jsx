@@ -1,24 +1,61 @@
-import React from 'react'
-import CV from '../assets/Kristian_Ceder_CV.pdf'
-import HeaderSocials from './HeaderSocials'
+import React, { useState, useEffect } from "react";
+import CV from "../assets/Kristian_Ceder_CV.pdf";
+import HeaderSocials from "./HeaderSocials";
 
 export default function Header() {
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.pageYOffset > 2000) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <header className='pt-28 h-[100vh] md:h-[68vh] overflow-hidden text-center'>
-      <div className=''>
-        <h5 className='text-center text-xl text-secondary mb-10'>Hello I'm</h5>
-        <h1 className='text-center text-5xl text-primary mb-10'>Kristian Ceder</h1>
-        <h5 className='text-center text-xl text-secondary'>Fullstack Developer</h5>
-        {/* <div className='me'>
-          <img src={ME} className='w-20 h-20 left-calc rounded-full mt-9 mx-auto' alt='Kristian' />
-        </div> */}
-        <div className='mt-9 flex gap-5 justify-center'>
-          <a href={CV} download className='button-1'>Download CV</a>
-          <a href="#contact" className='button-2'>Let's Talk</a>
+    <header id="header" className="pt-28 h-[90vh] md:h-[70vh] overflow-hidden text-center">
+      <div className="">
+        <h5 className="mb-10 text-xl text-center text-secondary">Hello I'm</h5>
+        <h1 className="mb-10 text-5xl text-center text-primary">
+          Kristian Ceder
+        </h1>
+        <h5 className="text-xl text-center text-secondary">
+          Fullstack Developer
+        </h5>
+        <div className="flex justify-center gap-5 mt-9">
+          <a href={CV} download className="button-1">
+            Download CV
+          </a>
+          <a href="#contact" className="button-2">
+            Let's Talk
+          </a>
         </div>
         <HeaderSocials />
-        <a href="#contact" className='bg-transparent hidden md:block fixed right-0 top-1/2 rotate-90 text-primary'>Scroll Down</a>
+        {isScrolled ? (
+          <a
+            href="#header"
+            className="fixed hidden rotate-90 bg-transparent right-2 md:block top-1/2 text-primary"
+          >
+            Scroll Up
+          </a>
+        ) : (
+          <a
+            href="#contact"
+            className="fixed right-0 hidden rotate-90 bg-transparent md:block top-1/2 text-primary"
+          >
+            Scroll Down
+          </a>
+        )}
       </div>
     </header>
-  )
+  );
 }
