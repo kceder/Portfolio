@@ -76,14 +76,14 @@ export default function Portfolio() {
               src={project.img}
               alt={project.title}
               className={`w-full md:aspect-square rounded-2xl ${
-                hoveredProject === index ? "opacity-0 duration-500" : "opacity-100"
+                hoveredProject === index ? "opacity-0 duration-300" : "opacity-100"
               }`}
             />
             <div
               className={`project_info absolute inset-0 rounded-2xl top-8 md:top-12 lg-top-20 p-6 border border-solid border-transparent overflow-scroll ${
-                hoveredProject !== index ? "opacity-0 duration-500" : "opacity-100"
+                hoveredProject !== index ? "opacity-0 duration-300" : "opacity-100 duration-300"
               }`}
-              style={{ transitionDelay: hoveredProject === index ? "0ms" : "0ms" }}
+              style={{ transitionDelay: hoveredProject === index ? "300ms" : "0ms" }}
             >
               <ul className="flex flex-row flex-wrap justify-center mb-2">
                 {project.used.map((tech) => (

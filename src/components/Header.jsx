@@ -22,7 +22,7 @@ export default function Header() {
   }, []);
 
   return (
-    <header id="header" className="pt-28 h-[90vh] md:h-[70vh] overflow-hidden text-center">
+    <header id="header" className="pt-28 h-[84vh] md:h-[70vh] overflow-hidden text-center">
       <div className="">
         <h5 className="mb-10 text-xl text-center text-secondary">Hello I'm</h5>
         <h1 className="mb-10 text-5xl text-center text-primary">

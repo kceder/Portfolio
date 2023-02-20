@@ -8,7 +8,7 @@ export default function Nav() {
   const [active, setActive] = useState("#1");
 
   return (
-    <nav className="fixed z-10 flex flex-row block gap-5 py-3 -translate-x-1/2 bg-white bg-opacity-50 w-max px-7 bottom-7 left-1/2 rounded-3xl">
+    <nav className="fixed z-10 flex flex-row gap-5 py-3 -translate-x-1/2 bg-white bg-opacity-50 w-max px-7 bottom-7 left-1/2 rounded-3xl">
       <a href="#" className="bg-transparent hover:scale-125 text-primary" onClick={() => setActive('#1')}>
         <AiOutlineHome className="bg-transparent" />
       </a>
