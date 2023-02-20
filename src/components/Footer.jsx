@@ -15,7 +15,7 @@ export default function Footer() {
         </a>
       </div>
       <div className='py-4 copyright'>
-        <p className='text-xs'>&copy;Kristian Ceder. All rights reserved</p>
+        <p className='text-xs'>&copy;Kristian Ceder. All rights reserved.</p>
       </div>
     </footer>
   )
