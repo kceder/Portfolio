@@ -10,7 +10,8 @@ import Portfolio from './components/Portfolio';
 function App() {
   return (
     <div>
-      <Header />
+      yo
+      {/* <Header />
       <Nav />
       <main>
         <About />
@@ -18,7 +19,7 @@ function App() {
         <Portfolio />
         <Contact />
       </main>
-      <Footer />
+      <Footer /> */}
     </div>
   );
 }
