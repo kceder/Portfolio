@@ -8,7 +8,7 @@ const projects = [
   {
     title: "Matcha",
     description1:
-      "A dating website that allows users to match with interestin people and chat with them in real time.",
+      "A dating website that allows users to match with interesting people and chat with them in real time.",
     // description2: "The website is built using Node.js, React and MySQL.",
     github: "https://github.com/kceder/Matcha/",
     img: m1,
