@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio/static/css/main.b81ae481.css",
-    "main.js": "/Portfolio/static/js/main.f0c1b922.js",
+    "main.js": "/Portfolio/static/js/main.9d56064a.js",
     "static/media/cama1.png": "/Portfolio/static/media/cama1.d42bf480d6866bbc4ef0.png",
     "static/media/hyper2.jpeg": "/Portfolio/static/media/hyper2.fa675f99c9398246b133.jpeg",
     "static/media/matcha1.jpeg": "/Portfolio/static/media/matcha1.f338f555a9da966f4d77.jpeg",
@@ -9,10 +9,10 @@
     "static/media/Kristian_Ceder_CV.pdf": "/Portfolio/static/media/Kristian_Ceder_CV.5b951bb03d76b2312578.pdf",
     "index.html": "/Portfolio/index.html",
     "main.b81ae481.css.map": "/Portfolio/static/css/main.b81ae481.css.map",
-    "main.f0c1b922.js.map": "/Portfolio/static/js/main.f0c1b922.js.map"
+    "main.9d56064a.js.map": "/Portfolio/static/js/main.9d56064a.js.map"
   },
   "entrypoints": [
     "static/css/main.b81ae481.css",
-    "static/js/main.f0c1b922.js"
+    "static/js/main.9d56064a.js"
   ]
 }
