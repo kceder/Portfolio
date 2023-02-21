@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.61027854.css",
-    "main.js": "/Portfolio/static/js/main.f81b5b25.js",
+    "main.css": "/Portfolio/static/css/main.b81ae481.css",
+    "main.js": "/Portfolio/static/js/main.7f268c06.js",
     "static/media/cama1.png": "/Portfolio/static/media/cama1.d42bf480d6866bbc4ef0.png",
     "static/media/hyper2.jpeg": "/Portfolio/static/media/hyper2.fa675f99c9398246b133.jpeg",
     "static/media/matcha1.jpeg": "/Portfolio/static/media/matcha1.f338f555a9da966f4d77.jpeg",
     "static/media/me.jpeg": "/Portfolio/static/media/me.bcc5dddfdbf7239e496b.jpeg",
-    "static/media/Kristian_Ceder_CV.pdf": "/Portfolio/static/media/Kristian_Ceder_CV.383cc669954fc49e3f89.pdf",
+    "static/media/Kristian_Ceder_CV.pdf": "/Portfolio/static/media/Kristian_Ceder_CV.5b951bb03d76b2312578.pdf",
     "index.html": "/Portfolio/index.html",
-    "main.61027854.css.map": "/Portfolio/static/css/main.61027854.css.map",
-    "main.f81b5b25.js.map": "/Portfolio/static/js/main.f81b5b25.js.map"
+    "main.b81ae481.css.map": "/Portfolio/static/css/main.b81ae481.css.map",
+    "main.7f268c06.js.map": "/Portfolio/static/js/main.7f268c06.js.map"
   },
   "entrypoints": [
-    "static/css/main.61027854.css",
-    "static/js/main.f81b5b25.js"
+    "static/css/main.b81ae481.css",
+    "static/js/main.7f268c06.js"
   ]
 }
