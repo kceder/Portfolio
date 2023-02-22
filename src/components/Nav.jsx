@@ -12,7 +12,7 @@ export default function Nav() {
       <a href="#" className="bg-transparent hover:scale-125 text-primary" onClick={() => setActive('#1')}>
         <AiOutlineHome className="bg-transparent" />
       </a>
-      <a href="#about" className="bg-transparent hover:scale-125 text-primary" onClick={() => setActive('#2')}>
+      <a href="#about" className="bg-transparent rounded-full hover:scale-125 text-primary" onClick={() => setActive('#2')}>
         <AiOutlineUser className="bg-transparent" />
       </a>
       <a href="#experience" className="bg-transparent hover:scale-125 text-primary" onClick={() => setActive('#3')}>

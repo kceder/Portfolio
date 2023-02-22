@@ -3,6 +3,8 @@ import { useState } from "react";
 import sc2 from "../assets/hyper2.jpeg";
 import m1 from "../assets/matcha1.jpeg";
 import c1 from "../assets/cama1.png";
+import { motion as m } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 
 const projects = [
   {
@@ -55,17 +57,25 @@ const projects = [
 export default function Portfolio() {
   const [hoveredProject, setHoveredProject] = useState(null);
 
+  const [ref, inView] = useInView({
+    threshold: 0.2, // trigger animation when element is 50% in view
+    triggerOnce: true, // only trigger animation once
+  });
+
   return (
     <section
       id="portfolio"
-      className="text-center mt-24 pt-20 pb-40 px-10 md:h-[96vh] bg-primary"
+      className="text-center mt-24 pt-20 pb-40 px-10 bg-primary"
     >
       <h5 className="my-5 text-white">What have I done</h5>
       <h2 className="text-5xl text-bright">My Portfolio</h2>
       <div className="w-20 h-1 mx-auto my-5 bg-primary"></div>
-      <div className="grid grid-cols-1 gap-16 mx-4 md:grid-cols-3">
+      <div className="grid grid-cols-1 gap-16 mx-4 md:grid-cols-3" ref={ref}>
         {projects.map((project, index) => (
-          <article
+          <m.article
+            initial={{ opacity: 0 }}
+            animate={inView ? { opacity: 1 } : { opacity: 0 }}
+            transition={{ duration: 0.5, delay: index * 0.2 }}
             key={index}
             className="relative p-6 border border-transparent border-solid bg-soft rounded-2xl"
             onMouseEnter={() => setHoveredProject(index)}
@@ -76,14 +86,20 @@ export default function Portfolio() {
               src={project.img}
               alt={project.title}
               className={`w-full md:aspect-square rounded-2xl ${
-                hoveredProject === index ? "opacity-0 duration-300" : "opacity-100"
+                hoveredProject === index
+                  ? "opacity-0 duration-300"
+                  : "opacity-100"
               }`}
             />
             <div
               className={`project_info absolute inset-0 rounded-2xl top-8 md:top-12 lg-top-20 p-6 border border-solid border-transparent overflow-scroll ${
-                hoveredProject !== index ? "opacity-0 duration-300" : "opacity-100 duration-300"
+                hoveredProject !== index
+                  ? "opacity-0 duration-300"
+                  : "opacity-100 duration-300"
               }`}
-              style={{ transitionDelay: hoveredProject === index ? "300ms" : "0ms" }}
+              style={{
+                transitionDelay: hoveredProject === index ? "300ms" : "0ms",
+              }}
             >
               <ul className="flex flex-row flex-wrap justify-center mb-2">
                 {project.used.map((tech) => (
@@ -98,11 +114,13 @@ export default function Portfolio() {
               </div>
               <div className="mt-6 links">
                 <button className="px-4 py-2 text-sm text-white border rounded-lg bg-secondary hover:bg-bright">
-                  <a href={project.github} target={"_blank"}>Github</a>
+                  <a href={project.github} target={"_blank"}>
+                    Github
+                  </a>
                 </button>
               </div>
             </div>
-          </article>
+          </m.article>
         ))}
       </div>
     </section>
