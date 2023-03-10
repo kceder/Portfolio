@@ -1,6 +1,6 @@
 ### A personal portfolio made from scratch with React and Tailwind.
 
-Visit the page [here](https://kceder.github.io/Portfolio/)!
+Visit the page [here](https://kceder.github.io/Portfolio/) !
 
 ## Available Scripts
 
