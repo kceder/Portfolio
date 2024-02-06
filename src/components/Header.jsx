@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import CV from "../assets/Kristian_Ceder_CV.pdf";
+import CV from "../assets/Kristian_Ceder_CV_2024.pdf";
 import HeaderSocials from "./HeaderSocials";
 import { motion as m } from "framer-motion";
 
